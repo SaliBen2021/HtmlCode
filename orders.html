@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Order Form</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/HARNGTON.TTF">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/order.jpg" alt="Order form logo" height="80">
+        <h2 class="header">Order Your Holiday Swag</h2>
+        <h3>Don't Be A Drag Order Your Swag!</h3>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a class="current" href="#">Home</a></li>
+
+            <li><a href="#">Swag 1</a>
+                <ul id="dropdown">
+                    <li><a href="#">Video 1</a></li>
+                    <li><a href="#">Video 2</a></li>
+                    <li><a href="#">Sound 1</a></li>
+                    <li><a href="#">Sound 2</a></li>
+
+                </ul>
+            </li>
+            <li><a href="#">Swag 2</a></li>
+            <li><a href="#">Swag 3</a>
+            </li>
+            <li><a href="#">Swag 4</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 class="header">Order Form</h1>
+            <form action="order.html" method="get" name="order_form" id="registration_form">
+                <p class="p1">Visitor</p>
+                <fieldset class="f1">
+                    <label for="firstname">First name:</label>
+                    <input type="text" name="firstname" id="firstname" autofocus required><br>
+
+                    <label for="lastname">Last name:</label>
+                    <input type="text" name="lastname" id="lastname" required><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required><br>
+                </fieldset>
+
+                <p class="p1">Credit Card Type</p>
+                <fieldset class="f1">
+
+                    <div id="div1">
+                        <input type="radio" name="mastercard" id="in1">
+                    </div>
+
+                    <div id="div2">
+                        <label id="l2" class="radio-inline">Master card</label>
+                    </div>
+
+                    <div id="div3">
+                        <input type="radio" name="visa" id="in2">
+                    </div>
+
+                    <div id="div4">
+                        <label id="l3" class="radio-inline">Visa</label>
+                    </div>
+                </fieldset>
+
+                <p class="p1">Order</p>
+                <fieldset>
+                    <label id="l4" class="drop-down-list">Order:</label>
+
+                    <select name="media type" id="S1">
+
+                        <option value="video">Video</option>
+                        <option value="sound">Sound</option>
+                        <option value="both">Both</option>
+                    </select>
+
+                </fieldset>
+
+
+                <p class="p1">Send Us Your Order</p>
+                <fieldset>
+                    <div id="div5">
+                        <input class="inSub" type="submit" name="submit" value="Submit Form">
+                        <input class="inSub" type="submit" name="resetform" value="Reset Form">
+                    </div>
+                </fieldset>
+
+            </form>
+
+            <h2>Samples</h2>
+            <audio controls>
+                <source src="media/sjv_welcome.mp3" type="audio/mp3">
+            </audio>
+
+            <video controls>
+                <source src="media/sjv_speakers_sampson.mp4" type="audio/mp3">
+            </video>
+
+
+        </section>
+
+
+
+        <aside><br>
+            <h1>About Us</h1>
+            <figure>
+                <img src="images/poster.png" alt="poster" width="100">
+                <figcaption><a href="#">"Find out more"</a></figcaption>
+            </figure>
+
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2021, Sali Ben Suleiman - 8773739</p>
+    </footer>
+</body>
+<!--Aug 2021 Final-->
+
+</html>
